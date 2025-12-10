@@ -1,0 +1,20 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: compile
+      run: gcc test_gerararquivohtml.c -o test_gerararquivohtml
+    - name: execute
+      run: ./test_gerararquivohtml
+   
