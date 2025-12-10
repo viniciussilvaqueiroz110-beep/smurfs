@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: compile
-      run: gcc gerararquivocsv.c -o gerararquivocsv
+      run: gcc geraarquivocsv.c -o geraarquivocsv
     - name: execute
-      run: ./gerararquivocsv
+      run: ./geraarquivocsv
     - name: compile
       run: gcc gerararquivohtml.c -o gerararquivohtml
     - name: execute
