@@ -7,6 +7,8 @@
 
 int main()
 
+{
+
     char smurfs[MAX_SMURFS][NAME_LEN];
     int capturas[MAX_SMURFS];
     char buffer[128];
@@ -14,7 +16,7 @@ int main()
     for (int i = 0; i < MAX_SMURFS; i++) {
         
        
-        smurfs[i] = "smurf";
+       strcpy(smurfs[i], "smurf");
 
         capturas[i] = 1;
     }
