@@ -14,6 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: compile
+    - run: gcc gerararquivohtml.c -o gerararquivohtml
+    - name: execute
+    - run: ./gerararquivohtml
+    - name: compile
       run: gcc test_gerararquivohtml.c -o test_gerararquivohtml
     - name: execute
       run: ./test_gerararquivohtml
